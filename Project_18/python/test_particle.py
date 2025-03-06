@@ -1,7 +1,5 @@
 import sys
-import os
-sys.path.append(os.path.dirname(__file__))  # Добавляет текущую директорию в пути поиска
-print(os.path.dirname(__file__))
+sys.path.append("C:/Users/User/Desktop/C++/Project_18/python")
 import particle
 
 class TestParticle(particle.Particle):
@@ -19,9 +17,9 @@ def run_test(test_name, test_func):
     print(f"[Тест] {test_name}... ", end="", flush=True)
     try:
         test_func()
-        print("✅ Успешно!")
+        print(" Успешно!")
     except AssertionError as e:
-        print("❌ Ошибка!")
+        print(" Ошибка!")
         print(f"   Подробности: {str(e)}")
         raise
 
